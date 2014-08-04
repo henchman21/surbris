@@ -21,17 +21,10 @@
     <link href="assets/css/animations.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
     
-    
-    <!-- JavaScripts needed at the beginning
-    ================================================== -->
-    <script type="text/javascript" src="http://alvarez.is/demo/marco/assets/js/twitterFetcher_v10_min.js"></script>
-
-    
     <!-- Main Jquery & Hover Effects. Should load first -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="assets/js/hover_pack.js"></script>
     
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -70,7 +63,7 @@
 		<div class="container">
 			<div class="row">
 				<!-- ADDRESS -->
-				<div class="col-lg-3">
+				<div class="col-lg-4">
 					<h4>Our Studio</h4>
 					<p>
 						Some Ave. 987,<br/>
@@ -81,33 +74,10 @@
 						<i class="fa fa-mobile"></i> +55 4893.8943<br/>
 						<i class="fa fa-envelope-o"></i> hello@yourdomain.com
 					</p>
-				</div><! --/col-lg-3 -->
-				
-				<!-- TWEETS -->
-				<div class="col-lg-3">
-					<h4>Recent Tweets</h4>
-					<div id="showtweets"></div>
-						<script>
-							twitterFetcher.fetch('258157205101088768', 'showtweets', 2, true, false, false, '', false, handleTweets, false);
-							
-							function handleTweets(tweets){
-							    var x = tweets.length;
-							    var n = 0;
-							    var element = document.getElementById('showtweets');
-							    var html = '<ul>';
-							    while(n < x) {
-							      html += '<li>' + tweets[n] + '</li>';
-							      n++;
-							    }
-							    html += '</ul>';
-							    element.innerHTML = html;
-							}					
-						</script>
-					<p>Follow us <b>@Alvrz_is</b></p>
-				</div><!-- /col-lg-3 -->
+				</div><! --/col-lg-4 -->
 				
 				<!-- LATEST POSTS -->
-				<div class="col-lg-3">
+				<div class="col-lg-4">
 					<h4>Latest Posts</h4>
 					<p>
 						<i class="fa fa-angle-right"></i> A post with an image<br/>
@@ -116,13 +86,13 @@
 						<i class="fa fa-angle-right"></i> We talk about something nice<br/>
 						<i class="fa fa-angle-right"></i> Yet another single post<br/>
 					</p>
-				</div><!-- /col-lg-3 -->
+				</div><!-- /col-lg-4 -->
 				
 				<!-- NEW PROJECT -->
-				<div class="col-lg-3">
+				<div class="col-lg-4">
 					<h4>New Project</h4>
 					<a href="#"><img class="img-responsive" src="assets/img/portfolio/port03.jpg" alt="" /></a>
-				</div><!-- /col-lg-3 -->
+				</div><!-- /col-lg-4 -->
 				
 				
 			</div><! --/row -->
